@@ -1,11 +1,11 @@
-package hello.advanced.app.v0;
+package hello.advanced.app.v2;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepositoryV0 {
+public class OrderRepositoryV2 {
 
     public void save(String itemId) {
 
