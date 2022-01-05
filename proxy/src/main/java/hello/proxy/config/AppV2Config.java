@@ -23,4 +23,5 @@ public class AppV2Config {
     public OrderRepositoryV2 orderRepositoryV2() {
         return new OrderRepositoryV2();
     }
+
 }

@@ -7,7 +7,8 @@ public class OrderServiceV2 {
         this.orderRepository = orderRepository;
     }
 
-    public void orderItemId(String itemId) {
+    public void orderItem(String itemId) {
         orderRepository.save(itemId);
     }
+
 }

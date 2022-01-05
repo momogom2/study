@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 public class OrderControllerV3 {
+
     private final OrderServiceV3 orderService;
 
     public OrderControllerV3(OrderServiceV3 orderService) {
@@ -15,7 +16,7 @@ public class OrderControllerV3 {
 
     @GetMapping("/v3/request")
     public String request(String itemId) {
-        orderService.orderItemId(itemId);
+        orderService.orderItem(itemId);
         return "ok";
     }
 
@@ -23,4 +24,5 @@ public class OrderControllerV3 {
     public String noLog() {
         return "ok";
     }
+
 }
